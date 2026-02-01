@@ -1727,7 +1727,7 @@ class SudokuGame {
                 counter.className = 'hint-counter';
                 btn.appendChild(counter);
             }
-            counter.textContent = this.hintsRemaining;
+            counter.textContent = this.hintsRemaining - 1;
 
             // Add disabled styling if no hints remaining
             if (this.hintsRemaining <= 0) {
