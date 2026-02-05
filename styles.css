@@ -172,11 +172,13 @@ main {
 }
 
 .app-btn.play-store img {
-    height: 60px;
+    height: 45px;
+    width: 140px;
 }
 
 .app-btn.app-store img {
     height: 45px;
+    width: 140px;
 }
 
 /* Play Now Button - Primary CTA */
@@ -618,11 +620,13 @@ footer {
     }
 
     .app-btn.app-store img {
-        height: 50px;
+        height: 45px;
+        width: 140px;
     }
 
     .app-btn.play-store img {
-        height: 65px;
+        height: 45px;
+        width: 140px;
     }
 
     .instruction-step {
