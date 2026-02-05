@@ -173,7 +173,11 @@ main {
 }
 
 .app-btn.play-store img {
-    height: 40px;
+    height: 60px;
+}
+
+.app-btn.app-store img {
+    height: 45px;
 }
 
 /* Play Now Button - Primary CTA */
@@ -614,8 +618,12 @@ footer {
         font-size: 1.2rem;
     }
 
-    .app-btn img {
-        height: 45px;
+    .app-btn.app-store img {
+        height: 50px;
+    }
+
+    .app-btn.play-store img {
+        height: 65px;
     }
 
     .instruction-step {
