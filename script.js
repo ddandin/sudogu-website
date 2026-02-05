@@ -44,3 +44,24 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// Mobile device detection and Play button handling
+document.addEventListener('DOMContentLoaded', function() {
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+    if (isMobile) {
+        // Hide "Play on Desktop" buttons on mobile devices
+        const playButtons = document.querySelectorAll('.play-now-btn');
+        const playNowSections = document.querySelectorAll('.play-now-section, .cta-buttons');
+
+        playButtons.forEach(btn => {
+            btn.style.display = 'none';
+        });
+
+        // Update labels to encourage download
+        const appLabels = document.querySelectorAll('.app-buttons-label, .cta-secondary-label');
+        appLabels.forEach(label => {
+            label.textContent = 'Download the app to play:';
+        });
+    }
+});
