@@ -658,9 +658,16 @@ footer {
     text-decoration: none;
 }
 
+.feedback-btn:link,
+.feedback-btn:visited,
+.feedback-btn:active,
+.feedback-btn:focus {
+    color: white !important;
+}
+
 .feedback-btn:hover {
     background: var(--primary-dark);
-    color: white;
+    color: white !important;
 }
 
 .feedback-note {
